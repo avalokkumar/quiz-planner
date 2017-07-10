@@ -1,0 +1,107 @@
+Quiz Planner
+-------------
+########## Data Model ########
+
+- User
+	#Role
+		- Moderator
+		- Participants
+
+	#Attributes
+		- p_name : string
+		- p_id : number
+		- p_username : string
+		- p_password : string
+		- p_dob : date
+		- enrolled_quiz: Quiz
+
+
+	#Operations
+		- Moderator : Enroll participants
+
+- Category
+	#Role
+		- Moderator
+		- Participants
+
+	#Attributes
+		- c_name : string
+		- c_id : number
+		- c_sub_categories : string
+
+	#Operations
+		- Moderator : Add Category
+		- User : Choose Category
+
+- Quiz
+	#Role
+		- Moderator
+		- Participants
+
+	#Attributes
+		- q_name : string
+		- q_id : number
+		- q_type : string
+		- q_difficulty_level : string
+		- q_num_questions : number
+		- q_category : Category
+		- q_total_points: number
+		- q_submitted_at : date
+
+	#Operations
+		- Moderator: Add quiz
+		- Moderator: Remove quiz
+		- Moderator: Update quiz
+		- Moderator: View quiz
+		- User: Submit Quiz
+
+- Login
+	#Role
+		- Moderator
+		- Participants
+
+	#Attributes
+		- username
+		- password
+		- role
+		- login_timestamp
+
+- Register
+		- name
+		- email
+		- username
+		- password
+		- phone_num
+		- role
+		- register_date
+
+- Question_Set
+	#Attributes
+		- questions: Questions[]
+		- q_set_
+
+- Questions
+	#Role
+		- Moderator
+
+	#Attributes
+		- qu_options : Question_Choices
+		- qu_is_multiple_choice: boolean
+
+- Question_Choices
+	#Role
+		- Moderator
+
+	#Attributes
+		- Choice_1 : string
+		- Choice_2 : string
+		- Choice_3 : string
+		- Choice_4 : string
+
+- Submissions
+	#Role
+		- Participants
+
+	#Attributes
+		- sub_time : date
+		- participant : User

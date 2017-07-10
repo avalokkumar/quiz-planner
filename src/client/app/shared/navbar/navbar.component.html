@@ -1,0 +1,27 @@
+<nav class="navbar navbar-inverse navbar-static-top">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">{{title}}</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a [routerLink]="['/']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">HOME</a></li>
+        <li><a [routerLink]="['/about']" [routerLinkActive]="['router-link-active']" [routerLinkActiveOptions]="{exact:true}">ABOUT</a></li>
+        <li><a href="#">System Requirements</a></li>
+        <li><a href="#">Reviews</a></li>
+        <li><a href="#">Downloads</a></li>
+      </ul>
+
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <div id="loginBtn" class="nav navbar-nav navbar-right">
+        <div href="#" class="btn btn-warning">Login</div>
+        <div href="#" class="btn btn-primary" *ngIf="false">Logout</div>
+      </div>
+    </div>
+  </div>
+</nav>
