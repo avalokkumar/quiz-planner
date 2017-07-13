@@ -1,12 +1,17 @@
 <div class="container-fluid homeContainer">
+  <div class="row">
+    <sd-header></sd-header>
+  </div>
   <div class="row allquiz">
    <div class="col-xs-3 col-md-3 col-lg-3" *ngFor="let quiz of allquiz">
       <div class="catBox">
+        <span class="title">
+          <h3 class="text-center text-danger">{{quiz.quiz_name}}</h3>
+        </span>
         <img src={{quiz.image}} class="img img-thumbnail" alt="">
         <ul>
           <li>{{quiz.image}}</li>
           <li>id: {{quiz.quiz_id}}</li>
-          <li>name: {{quiz.quiz_name}}</li>
           <li>name: {{quiz.quiz_cat}}</li>
         </ul>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad beatae commodi ducimus eaque, fugiat incidunt labore tenetur voluptatibus.
@@ -14,4 +19,5 @@
       </div>
     </div>
   </div>
+  <sd-footer></sd-footer>
 </div>
