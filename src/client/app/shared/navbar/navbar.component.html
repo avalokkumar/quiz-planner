@@ -19,9 +19,12 @@
         <button type="submit" class="btn btn-primary">Submit</button>
       </form>
       <div id="loginBtn" class="nav navbar-nav navbar-right">
-        <div href="#" class="btn btn-warning">Login</div>
+        <a href="#" class="btn btn-warning" [routerLink]="['/login']" role="button">Login</a>
         <div href="#" class="btn btn-primary" *ngIf="false">Logout</div>
       </div>
     </div>
   </div>
+  <!--<div class="">
+  </div>-->
 </nav>
+

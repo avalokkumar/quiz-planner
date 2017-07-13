@@ -1,0 +1,13 @@
+.footer{
+  background-color: #0c1a1e;
+  height: 10em;
+}
+
+ul > li{
+  list-style: none;
+}
+
+ul{
+  padding: 1em;
+}
+

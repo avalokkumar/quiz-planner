@@ -31,6 +31,7 @@ export class ProjectConfig extends SeedConfig {
        {src: `${this.APP_SRC}/js/jquery-3.2.1.min.js`, inject: true, vendor: false},
        {src: `${this.APP_SRC}/js/bootstrap..min.js`, inject: true, vendor: false},
        {src: `${this.APP_SRC}/js/tether.min.js`, inject: true, vendor: false},
+       {src: `${this.APP_SRC}/js/custom-login.js`, inject: true, vendor: false},
        {src: `${this.CSS_SRC}/bootstrap.min.css`, inject: true, vendor: false}
     ];
 

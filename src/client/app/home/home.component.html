@@ -1,10 +1,17 @@
-<p>Howdy! Here's a list of awesome computer scientists. Do you know any others? Add to the list yourself.</p>
-
-<form (submit)="addName()">
-  <input [(ngModel)]="newName" name="newName" placeholder="Awesome Computer Scientist">
-  <button type="submit">Add</button>
-</form>
-
-<ul>
-  <li *ngFor="let name of names">{{ name }}</li>
-</ul>
+<div class="container-fluid homeContainer">
+  <div class="row allquiz">
+   <div class="col-xs-3 col-md-3 col-lg-3" *ngFor="let quiz of allquiz">
+      <div class="catBox">
+        <img src={{quiz.image}} class="img img-thumbnail" alt="">
+        <ul>
+          <li>{{quiz.image}}</li>
+          <li>id: {{quiz.quiz_id}}</li>
+          <li>name: {{quiz.quiz_name}}</li>
+          <li>name: {{quiz.quiz_cat}}</li>
+        </ul>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad beatae commodi ducimus eaque, fugiat incidunt labore tenetur voluptatibus.
+        Aspernatur debitis dolores harum inventore labore molestias perspiciatis placeat quam ut vero?
+      </div>
+    </div>
+  </div>
+</div>
